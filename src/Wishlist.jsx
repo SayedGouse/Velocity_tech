@@ -4,7 +4,7 @@ import React from 'react';
 const Whishlist = () => {
   return (
     <View style={styles.main}>
-      <Text style={styles.font}>Whishlist</Text>
+      <Text style={styles.font}>Wishlist</Text>
     </View>
   );
 };
@@ -20,5 +20,6 @@ const styles = StyleSheet.create({
   font: {
     fontSize: 24,
     fontWeight: '700',
+    color:'black'
   },
 });

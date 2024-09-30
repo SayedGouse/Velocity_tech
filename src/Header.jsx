@@ -56,19 +56,20 @@ const Header = ({ setSelectedCategory, searchInput, onSearchChange }) => {
       <View style={styles.maininput}>
         <View style={styles.boxtwo}>
           <View>
-            <Feather style={styles.search} name='search' size={20} />
+            <Feather style={styles.search} name='search' color='black'  size={20} />
           </View>
           <TextInput
             placeholder='Search'
-            style={styles.input}
+            placeholderTextColor="black" 
+            style={styles.input} 
             value={searchInput}
             onChangeText={onSearchChange}
           />
-          <FontAwesome6 style={styles.mic} name='microphone-lines' size={20} />
+          <FontAwesome6 style={styles.mic} name='microphone-lines' color='black' size={20} />
         </View>
 
         <View style={styles.boxone}>
-          <FontAwesome6 name='bars-progress' size={20} />
+          <FontAwesome6 name='bars-progress' color='black' size={20} />
         </View>
       </View>
     </View>
@@ -155,6 +156,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginLeft: 5,
   },
+  
   mic: {
     position: 'absolute',
     right: 10,
